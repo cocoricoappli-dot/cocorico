@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cocorico – Politique de confidentialité</title>
+  <meta name="description" content="Politique de confidentialité de l'application Cocorico : ce que l'application lit, ce qu'elle fait des textes et ce qui part sur Internet.">
+  <link rel="icon" type="image/png" href="icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="bande"><span></span><span></span><span></span></div>
+    <div class="entete">
+      <div class="titres">
+        <h1><a href="./" style="color:#fff;text-decoration:none">COCORICO</a></h1>
+        <div class="trait"><span></span><span></span><span></span></div>
+        <p class="slogan">Politique de confidentialité</p>
+        <p>Dernière mise à jour : 23 novembre 2026</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="politique">
+      <p>Cocorico est une application de contrôle parental. Installée par un parent sur le téléphone de son enfant, elle masque les messages blessants (insultes, harcèlement, menaces, propos racistes, sexistes ou homophobes) dans les applications choisies par le parent.</p>
+
+      <h2>1. Ce que Cocorico lit</h2>
+      <p>Cocorico utilise le service d'accessibilité d'Android pour lire les textes affichés à l'écran, uniquement dans les applications cochées par le parent (par exemple SMS, Instagram, WhatsApp, TikTok, Snapchat, Discord) et, si le parent le choisit, dans les aperçus de notifications (barre de notifications, écran verrouillé).</p>
+      <p>Cocorico regarde aussi les écrans des Réglages du téléphone qui permettent de le désactiver ou de le désinstaller, pour les protéger par le code parent.</p>
+
+      <h2>2. Ce que Cocorico fait de ces textes</h2>
+      <p>Les textes sont comparés, directement sur le téléphone, à une liste de mots et d'expressions. S'ils en contiennent, ils sont recouverts par un rectangle « Message masqué ».</p>
+      <p>Les textes ne sont <strong>jamais enregistrés, jamais copiés et jamais envoyés</strong>, ni à nous, ni au parent, ni à personne. Cocorico fonctionne sans intelligence artificielle et sans serveur.</p>
+
+      <h2>3. Ce qui part sur Internet</h2>
+      <p>Des alertes courtes envoyées au parent par le service gratuit ntfy (ntfy.sh), sur un canal secret créé au hasard. Ces alertes disent par exemple :</p>
+      <ul>
+        <li>« 3 codes parent faux ont été saisis » ;</li>
+        <li>« Cocorico est désactivé » / « Cocorico réactivé » ;</li>
+        <li>« Quelqu'un a ouvert un réglage protégé » ;</li>
+        <li>« Votre enfant demande de l'aide », si l'enfant touche le bouton « J'ai besoin d'aide » ;</li>
+        <li>un message quotidien « Cocorico actif » (désactivable) ;</li>
+        <li>le <strong>type</strong> d'un message masqué, l'application et l'heure (par exemple « Message à caractère sexuel masqué sur Snapchat à 21:40 »), tout de suite pour les messages graves, et dans un bilan du soir pour tous (désactivable).</li>
+      </ul>
+      <p>Les alertes ne contiennent <strong>jamais</strong> le texte des messages de l'enfant, ni l'expéditeur, ni ses contacts, ni sa position, ni ses photos.</p>
+      <p>Le service ntfy reçoit ces alertes pour les transmettre ; il a sa propre politique de confidentialité (<a href="https://ntfy.sh" rel="noopener">ntfy.sh</a>).</p>
+      <p>Cocorico télécharge aussi, une fois par jour, la liste de mots à jour depuis GitHub (github.com). Rien n'est envoyé : comme pour toute page web, GitHub voit seulement l'adresse IP du téléphone. Chaque liste est signée : Cocorico refuse une liste qui ne vient pas de nous.</p>
+
+      <h2>4. Ce qui reste sur le téléphone</h2>
+      <p>Les réglages de Cocorico : le niveau de protection, les applications choisies, les mots ajoutés par le parent, le canal d'alerte, et une empreinte du code parent et du code de secours (les codes eux-mêmes ne sont jamais enregistrés en clair). Ces données ne quittent pas le téléphone et sont effacées en désinstallant Cocorico.</p>
+
+      <h2>5. Autorisations utilisées</h2>
+      <ul>
+        <li><strong>Service d'accessibilité</strong> : lire et masquer les textes, protéger les réglages (voir points 1 et 2).</li>
+        <li><strong>Administrateur de l'appareil</strong> (si le parent l'active) : uniquement pour empêcher la désinstallation sans le code parent. Cocorico n'utilise aucun autre pouvoir (ni effacement, ni verrouillage, ni caméra).</li>
+        <li><strong>Internet</strong> : uniquement pour les alertes et le téléchargement de la liste de mots (point 3).</li>
+        <li><strong>Notifications</strong> : afficher en permanence « Cocorico protège ce téléphone », pour que l'enfant sache que l'application est active.</li>
+        <li><strong>Démarrage du téléphone</strong> : relancer la vérification régulière après un redémarrage.</li>
+      </ul>
+
+      <h2>6. Pas de publicité, pas de vente de données</h2>
+      <p>Cocorico ne contient ni publicité, ni traceur, ni outil de statistiques. Aucune donnée n'est vendue ni partagée.</p>
+
+      <h2>7. Enfants</h2>
+      <p>Cocorico s'adresse aux parents. Il est conçu pour protéger les enfants et les adolescents sans lire leurs conversations à leur place : le parent ne voit un message masqué qu'en saisissant son code sur le téléphone de l'enfant. Une notification permanente informe l'enfant que Cocorico est actif.</p>
+
+      <h2>8. Vos droits</h2>
+      <p>Comme Cocorico ne collecte aucune donnée personnelle sur un serveur, il n'y a rien à consulter ni à supprimer chez nous. Pour tout effacer : désinstallez Cocorico (bouton « Retirer la protection » dans les réglages parent, puis désinstallation).</p>
+
+      <h2>9. Contact</h2>
+      <p>Cocorico est édité par Le P'tit Galopin.<br>
+      E-mail : <a href="mailto:contact@leptitgalopin.com">contact@leptitgalopin.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    Cocorico est édité par Le P'tit Galopin · <a href="./">Accueil</a> ·
+    <a href="mailto:contact@leptitgalopin.com">Contact</a>
+  </footer>
+</body>
+</html>

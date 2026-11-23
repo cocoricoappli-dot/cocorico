@@ -1,0 +1,83 @@
+:root {
+  --bleu: #0055A4;
+  --bleu-nuit: #002E6E;
+  --rouge: #EF4135;
+  --fond: #F3F7FD;
+  --texte: #26344A;
+  --pale: #DCE8F7;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.bande { display: flex; height: 6px; }
+.bande span { flex: 1; }
+.bande span:nth-child(1) { background: var(--bleu); }
+.bande span:nth-child(2) { background: #fff; }
+.bande span:nth-child(3) { background: var(--rouge); }
+header {
+  background: linear-gradient(135deg, var(--bleu), var(--bleu-nuit));
+  color: #fff;
+}
+.entete {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 16px 48px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.entete img { width: 240px; max-width: 70%; height: auto; }
+.entete .titres { flex: 1 1 320px; }
+h1 {
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  font-weight: 900;
+  letter-spacing: .04em;
+  margin: 0;
+  line-height: 1.05;
+}
+.slogan { color: #FFD6D2; font-style: italic; font-weight: 700; font-size: 1.35rem; margin: 10px 0 18px; }
+.trait { display: flex; width: 150px; height: 6px; border-radius: 3px; overflow: hidden; margin-top: 10px; }
+.trait span { flex: 1; }
+.trait span:nth-child(1) { background: #4A8BD6; }
+.trait span:nth-child(2) { background: #fff; }
+.trait span:nth-child(3) { background: var(--rouge); }
+.entete p { margin: 0 0 8px; font-size: 1.1rem; }
+.bouton {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 24px;
+  border-radius: 28px;
+  background: #fff;
+  color: var(--bleu-nuit);
+  font-weight: 700;
+  text-decoration: none;
+}
+.bouton.inactif { opacity: .75; cursor: default; }
+main { max-width: 980px; margin: 0 auto; padding: 32px 16px 48px; }
+h2 { color: var(--bleu-nuit); font-size: 1.6rem; margin: 36px 0 6px; }
+h2::after { content: ""; display: block; width: 46px; height: 4px; background: var(--rouge); border-radius: 2px; margin-top: 6px; }
+h3 { color: var(--bleu-nuit); margin: 0 0 6px; font-size: 1.15rem; }
+.cartes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 18px; }
+.carte { background: #fff; border: 2px solid var(--pale); border-radius: 20px; padding: 20px; }
+.carte p { margin: 0; }
+.encadre { background: #fff; border-left: 6px solid var(--bleu); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+.aide { border-left-color: var(--rouge); }
+a { color: var(--bleu); }
+.politique { background: #fff; border: 2px solid var(--pale); border-radius: 20px; padding: 8px 24px 24px; }
+.politique ul { padding-left: 22px; }
+footer { background: var(--bleu-nuit); color: #DCE8F7; text-align: center; padding: 24px 16px; font-size: .95rem; }
+footer a { color: #fff; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .entete { padding: 28px 16px 36px; gap: 16px; text-align: center; }
+  .trait { margin-left: auto; margin-right: auto; }
+}
