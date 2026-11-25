@@ -35,7 +35,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
-.entete img { width: 240px; max-width: 70%; height: auto; }
+.entete picture { display: block; flex: 0 0 auto; width: 240px; max-width: 70%; }
+.entete img { display: block; width: 100%; height: auto; }
 .entete .titres { flex: 1 1 320px; }
 h1 {
   font-size: clamp(2.4rem, 7vw, 4rem);
