@@ -36,6 +36,7 @@ header {
   justify-content: center;
 }
 .entete picture { display: block; flex: 0 0 auto; width: 250px; max-width: 72%; }
+.entete picture.large { width: 284px; }
 .entete img { display: block; width: 100%; height: auto; }
 .entete .titres { flex: 1 1 320px; }
 h1 {
