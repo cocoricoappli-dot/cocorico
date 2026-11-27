@@ -135,3 +135,5 @@ footer a { color: #fff; }
 .notif span { color: #4B5B73; }
 .petit { font-size: .92rem; color: #4B5B73; margin-top: 8px !important; }
 @media (max-width: 860px) { .etapes { grid-template-columns: 1fr; } }
+
+.petit-prix { font-size: .95rem; margin-top: 10px !important; opacity: .9; }
